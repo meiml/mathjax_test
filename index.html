@@ -4,13 +4,28 @@
     <meta charset="utf-8">
     <title>Schr&ouml;dinger's equation</title>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    %
+    \usepackage{mathtools}
+    %
 </head>
 
 <body>
-<h2>ハミルトニアンの固有値方程式</h2>
+<h2>ハミルトニアンの固有方程式</h2>
 <p>
     \begin{equation} 
     \mathscr{H} \ket{\psi} = E \ket{\psi}
+    \end{equation}
+</p>
+
+<h2>正規分布</h2>
+<p>
+    \begin{equation} 
+    p(\boldsymbol{x}) = \frac{1}{\sqrt{(2\pi)^n |\Sigma|}}
+    \exp\left(- \frac{1}{2} 
+        (\boldsymbol{x} - \boldsymbol{\mu})^{\top}
+        \Sigma^{-1}
+        (\boldsymbol{x} - \boldsymbol{\mu})
+    \right)
     \end{equation}
 </p>
 </body>
