@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>いろんなテスト</title>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=desert"></script>
+    <script src="quiz.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="int"></div>
+    answer
+    <div id="ans"></div>
+    <script>
+    let element = document.querySelector('#int');
+    param = getRandomIntArray(5, 2, 10);
+    element.textContent = `\$$\\int_{${param[0]}}^{${param[1]}}(${param[2]}x^2+${param[3]}x+${param[4]}) \\ \\mathrm{d}x \$$`;
+    let ans = document.querySelector('#ans');
+    
+    ans.textContent = `\$$ ${solve(param)} \$$`;
+    </script>
+</body>
+</html>
